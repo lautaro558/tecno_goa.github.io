@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TecnoGoa - Tecnología al mejor precio</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<header>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <div class="logo">TecnoGoa</div>
+  <button class="cart-btn" onclick="checkout()">🛒 <span class="cart-count" id="cartCount">0</span></button>
+  <div class="dropdown-menu" id="menu">
+    <h4>Categorías</h4>
+    <a href="celulares.html">Celulares</a>
+    <a href="notebooks.html">Notebooks</a>
+    <a href="auriculares.html">Auriculares</a>
+    <a href="smartwatches.html">Smartwatches</a>
+    <h4>Marcas</h4>
+    <a href="marcas/apple.html">Apple</a>
+    <a href="marcas/samsung.html">Samsung</a>
+    <a href="marcas/xiaomi.html">Xiaomi</a>
+    <a href="marcas/motorola.html">Motorola</a>
+    <a href="marcas/huawei.html">Huawei</a>
+  </div>
+</header>
+<div class="container">
+  <div class="product">
+    <img src="https://via.placeholder.com/250x160?text=Producto+Destacado" alt="Producto">
+    <h3>Producto Destacado</h3>
+    <p>Descripción del producto destacado.</p>
+    <div class="price">$100.000</div>
+    <button class="btn" onclick="addToCart()">Agregar al carrito</button>
+  </div>
+</div>
+<footer>
+  <button class="btn" onclick="checkout()">Pagar con Mercado Pago</button>
+</footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>
